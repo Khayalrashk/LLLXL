@@ -94,50 +94,6 @@ async def song(_, message: Message):
         error_message = f"- فشل في حذف الملفات المؤقتة. \n\n**السبب :** `{ex}`"
         await m.edit_text(error_message)
 
-@app.on_message(command(["تحميل", "video"]))
-async def video_search(client, message):
-    ydl_opts = {
-        "format": "best",
-        "keepvideo": True,
-        "prefer_ffmpeg": False,
-        "geo_bypass": True,
-        "outtmpl": "%(title)s.%(ext)s",
-        "quite": True,
-    }
-    query = " ".join(message.command[1:])
-    try:
-        results = YoutubeSearch(query, max_results=1).to_dict()
-        link = f"https://youtube.com{results[0][ url_suffix ]}"
-        title = results[0]["title"][:40]
-        thumbnail = results[0]["thumbnails"][0]
-        thumb_name = f"thumb{title}.jpg"
-        thumb = requests.get(thumbnail, allow_redirects=True)
-        with open(thumb_name, "wb") as file:
-            file.write(thumb.content)
-        results[0]["duration"]
-        results[0]["url_suffix"]
-        results[0]["views"]
-        message.from_user.mention
-    except Exception as e:
-        print(e)
-    try:
-        msg = await message.reply("- يتم البحث الان .")
-        with yt_dlp.YoutubeDL(ydl_opts) as ytdl:
-            ytdl_data = ytdl.extract_info(link, download=True)
-            file_name = ytdl.prepare_filename(ytdl_data)
-    except Exception as e:
-        return await msg.edit(f"🚫 **error:** {e}")
-    thumb_path = f"thumb{title}.jpg"
-    if not os.path.exists(thumb_path):
-        return await msg.edit(f"🚫 **error:** Thumb file not found!")
-    
-    await msg.edit("- تم الرفع انتضر قليلاً .")
-    await message.reply_video(
-        file_name,
-        duration=int(ytdl_data["duration"]),
-        thumb=thumb_path,
-        caption=ytdl_data["title"],
-    )
     try:
         os.remove(file_name)
         os.remove(thumb_path)
