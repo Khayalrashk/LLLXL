@@ -13,6 +13,7 @@ import re
 import sys
 import os
 import random
+import config
 from time import time
 from os import getenv
 from dotenv import load_dotenv
@@ -129,8 +130,7 @@ async def khalid(client: Client, message: Message):
                 [
 
                     InlineKeyboardButton(
-
-                                            name, user_id=6581896306)
+                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)
                 ],
 
             ]
