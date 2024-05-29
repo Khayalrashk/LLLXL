@@ -12,6 +12,7 @@ from pyrogram.types import (
     Message,
 )
 from ZeMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+import config
 
 
 REPLY_MESSAGE = "**- اهلا بك عزيزي اليك قائمه الاوامر**"
@@ -74,7 +75,7 @@ async def dowhmo(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "قناة السورس", url=f"https://t.me/Source_Ze"),
+                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK),
                 ],[
                     InlineKeyboardButton(
                         "• ضيفني لقروبك 🎻", url=f"https://t.me/{app.username}?startgroup=true"),
