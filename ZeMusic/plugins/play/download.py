@@ -7,7 +7,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
 from ZeMusic import app
-from config import SUPPORT_CHAT
+import config
 import os.path
 
 def is_valid_youtube_url(url):
@@ -66,7 +66,7 @@ async def song(_, message: Message):
 
         visit_butt = InlineKeyboardMarkup(
     [
-        [InlineKeyboardButton(text="- المنشئ .", url=SUPPORT_CHAT)],
+        [InlineKeyboardButton(text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)],
     ]
 )
         # Reply to the user who initiated the search
