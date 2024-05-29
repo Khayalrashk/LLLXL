@@ -64,7 +64,7 @@ InlineKeyboardButton(" member keyboard ", callback_data="Q_XUQ"),
                 ],
                 [
                     InlineKeyboardButton(
-                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)"
+                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK
                     ),
                     InlineKeyboardButton(
                         text="‹ المطور ›", user_id=config.OWNER_ID
