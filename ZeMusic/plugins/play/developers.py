@@ -15,16 +15,17 @@ from random import  choice, randint
 
 #          
                 
-@app.on_message(filters.command(["السورس","المبرمج خيال","مبرمج السورس","خيال"],"")
+@app.on_message(
+    command(["المبرمج","مبرمج","مبرمج السورس","مطور السورس","خيال"])
+    & filters.group
+    & ~filters.edited
 )
-async def huhh(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/96857cb597b588139fdd5.jpg",
-        caption=f"""◉ 𝙽𝙰𝙼𝙴 : ❪[• 𝐊𝐡𝐚𝐲𝐚𝐥 𓏺](https://t.me/F_A_6)❫
-◉ 𝚄𝚂𝙴𝚁 : ❪ @F_A_6 ❫
-◉ 𝙸𝙳      : ❪ `5901732027` ❫
-◉ 𝙱𝙸𝙾    : ❪ my world KHAYAL70.t.me ❫""",
-        reply_markup=InlineKeyboardMarkup(
+async def yas(client, message):
+    usr = await client.get_chat("F_A_6")
+    name = usr.first_name
+    photo = await app.download_media(usr.photo.big_file_id)
+    await message.reply_photo(photo,       caption=f"**⩹━⊷⌯⌞ 𖧊 𝐒𝐨𝐮𝐫𝐜𝐞 𝐥𝐨𝐥 𖧊 ⌝⌯⊶━⩺\n\n¦namee :{name}\n ¦u𝘴e𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥo :{usr.bio}\n\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐨𝐮𝐫𝐜𝐞 𝐥𝐨𝐥 𖧊 ⌝⌯⊶━⩺**", 
+    reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
