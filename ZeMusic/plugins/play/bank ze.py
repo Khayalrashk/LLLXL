@@ -2,6 +2,7 @@ import json
 import random
 from typing import List, Union
 import time
+import config
 from pyrogram import filters
 import datetime
 from ZeMusic import app
@@ -11,7 +12,7 @@ from pyrogram import Client, filters
 #######£££££££££££££££#######££££££££££#############££££££££££#########££££#
 #######£££££££££££££££#######££££££££££#############££££££££££#########££££
 
-SUDOERS = [6581896306]
+SUDOERS = [5901732027]
 
 OWNER_ID = 6581896306
 
