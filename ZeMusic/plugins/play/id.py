@@ -75,7 +75,7 @@ def get_file_id(msg: Message):
 
 
 
-@app.on_message(command(["ا"]) & filters.group &
+@app.on_message(command(["ا"]) & filters.group)
 async def khalid(client: Client, message: Message):
     usr = await client.get_users(message.from_user.id)
     name = usr.first_name
