@@ -11,7 +11,7 @@ API_ID = int(getenv("API_ID","25281175"))
 API_HASH = getenv("API_HASH","6d99cb2b60a2c519fc1f99bd19565730")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI",None)
@@ -35,8 +35,7 @@ UPSTREAM_REPO = getenv(
     "https://github.com/Khayalrashk/LLLXL",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
-GIT_TOKEN = getenv(
-    "GIT_TOKEN", None
+GIT_TOKEN = getenv("GIT_TOKEN", None)
     
 LARIN_NAME = getenv("LARIN_NAME", "اقتباسات")
 LARIN_LINK = getenv("LARIN_LINK", "https://t.me/D2220")
