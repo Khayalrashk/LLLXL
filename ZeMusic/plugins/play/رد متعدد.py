@@ -2,6 +2,7 @@ import asyncio
 from ZeMusic import app 
 from strings.filters import command
 import random
+import config
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
@@ -12,6 +13,6 @@ italy = ["انت اللي مين ؟!", "بتكلمني انا", "معرفش🤔"
 async def Italymusic(client, message):
     if "مين" in message.text:
         response = random.choice(italy)
-        keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("قناة السورس", url="https://t.me/Source_Ze")]])
+        keyboard = InlineKeyboardMarkup([[InlineKeyboardButton(text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)]])
         await message.reply(response, reply_markup=keyboard)
 
