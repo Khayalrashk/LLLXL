@@ -9,7 +9,7 @@ from pyrogram import Client, emoji
 from config import *
 from pyrogram import filters
 from strings.filters import command
-from config import OWNER_ID
+from config import OWNER_ID, LARIN_NAME, LARIN_LINK
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
 from pyrogram.errors import MessageNotModified
 
@@ -47,7 +47,7 @@ async def cr_source(client: Client, message: Message):
                  ],[       
                        
                     InlineKeyboardButton(
-                        "‹ السورس ›", url=f"https://t.me/Source_Ze"),
+                        text=config.LARIN_NAME, url=config.LARIN_LINK),
                 ],
 
             ]
