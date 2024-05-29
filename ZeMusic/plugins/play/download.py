@@ -110,8 +110,6 @@ async def video_search(client, message):
         link = f"https://youtube.com{results[0][ url_suffix ]}"
         title = results[0]["title"][:40]
         thumbnail = results[0]["thumbnails"][0]
-        # إزالة الأحرف غير الصحيحة من اسم الملف
-        title = re.sub(r [\\/*?:"<>|] ,   , title)
         thumb_name = f"thumb{title}.jpg"
         thumb = requests.get(thumbnail, allow_redirects=True)
         with open(thumb_name, "wb") as file:
