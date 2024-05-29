@@ -12,7 +12,7 @@ from pyrogram.types import Message, InputTextMessageContent, InlineKeyboardMarku
 from youtube_search import YoutubeSearch
 import config
 from ZeMusic import app
-from ZeMusic.plugins.play.filters import command
+from strings.filters import command
 
 def remove_if_exists(path):
     if os.path.exists(path):
