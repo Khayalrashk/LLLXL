@@ -42,7 +42,7 @@ LARIN_LINK = getenv("LARIN_LINK", "https://t.me/D2220")
 CHANNEL_NAME = getenv("CHANNEL_NAME", "𝐒𝐨𝐮𝐫𝐜𝐞 𝐥𝐨𝐥 🧚‍♀")
 CHANNEL_LINK = getenv("CHANNEL_LINK", "https://t.me/K55DD")
 
-)  # Fill this variable if your upstream repository is private
+# Fill this variable if your upstream repository is private
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/YMMYC")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/YMMYC")
