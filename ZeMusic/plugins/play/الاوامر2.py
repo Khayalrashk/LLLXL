@@ -33,7 +33,7 @@ InlineKeyboardButton("لتفعيل كيبورد الاعضاء", callback_data="
                         "‹ السورس ›", url=f"https://t.me/K55DD"
                     ),
                     InlineKeyboardButton(
-                        "‹ اضف البوت لمجموعتك ›", url=f"https://t.me/ze7hbot?startgroup=true"
+                        "‹ اضف البوت لمجموعتك ›", url=f"https://t.me/{app.username}?startgroup=true"
                     ),
                 ],
             ]
@@ -67,7 +67,7 @@ InlineKeyboardButton(" member keyboard ", callback_data="Q_XUQ"),
                         text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)"
                     ),
                     InlineKeyboardButton(
-                        "‹ المطور ›", url=f"https://t.me/F_A_6"
+                        text="‹ المطور ›", user_id=config.OWNER_ID
                     ),
                 ],
             ]
