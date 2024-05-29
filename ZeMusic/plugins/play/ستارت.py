@@ -36,7 +36,7 @@ InlineKeyboardButton("لتفعيل كيبورد الاعضاء", callback_data="
                 ],
                 [
                     InlineKeyboardButton(
-                        text="‹ المطور ›", user_id=config.OWNER_ID"
+                        text="‹ المطور ›", user_id=config.OWNER_ID
                     )
                 ],
             ]
