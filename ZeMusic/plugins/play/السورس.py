@@ -29,12 +29,12 @@ async def huhh(client: Client, message: Message):
                     
                 
                     InlineKeyboardButton(
-                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)),
+                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK),
                 ],[
                     
                 
                     InlineKeyboardButton(
-                        text=config.LARIN_NAME, url=config.LARIN_LINK)),
+                        text=config.LARIN_NAME, url=config.LARIN_LINK),
                 
         ],
 
