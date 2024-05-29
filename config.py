@@ -80,6 +80,9 @@ lyrical = {}
 votemode = {}
 autoclean = []
 confirmer = {}
+chatstats = {}
+userstats = {}
+clean = {}
 
 
 START_IMG_URL = "https://telegra.ph/file/41a777f089288f7ad2571.jpg"
