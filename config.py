@@ -16,13 +16,13 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI",None)
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 480))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 1200))
 
 # Chat id of a group for logging bot's activities
 LOGGER_ID = int(getenv("LOGGER_ID"))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6581896306))
+OWNER_ID = int(getenv("OWNER_ID", 5901732027))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -32,15 +32,21 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/modymesourceze/ZeMusic",
+    "https://github.com/LLLA1/LLLAR2",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
+    
+LARIN_NAME = getenv("LARIN_NAME", "اقتباسات")
+LARIN_LINK = getenv("LARIN_LINK", "https://t.me/D2220")
+CHANNEL_NAME = getenv("CHANNEL_NAME", "𝐒𝐨𝐮𝐫𝐜𝐞 𝐥𝐨𝐥 🧚‍♀")
+CHANNEL_LINK = getenv("CHANNEL_LINK", "https://t.me/K55DD")
+
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Source_Ze")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ZeSupport")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/YMMYC")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/YMMYC")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
