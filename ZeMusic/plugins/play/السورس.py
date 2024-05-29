@@ -19,9 +19,8 @@ from random import  choice, randint
 )
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/41a777f089288f7ad2571.jpg",
-        caption=f"""**ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ . .
- [• 𝐒𝐨𝐮𝐫𝐜𝐞 𝐋𝐚𝐫𝐢𝐧 ♩](https://t.me/SourceLarin)**""",
+        photo=f"https://graph.org/file/57036e277059ef8608dd3.jpg",
+        caption=f"""** [ ➮ 𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐋𝐚𝐫𝐢𝐧 🎧](https://t.me/SourceLarin)**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
