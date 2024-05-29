@@ -15,23 +15,23 @@ from random import  choice, randint
 
 #          
                 
-@app.on_message(filters.command(["مودي","المبرمج مودي","مبرمج السورس","مبرمج"],"")
+@app.on_message(filters.command(["السورس","المبرمج خيال","مبرمج السورس","خيال"],"")
 )
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/96857cb597b588139fdd5.jpg",
-        caption=f"""◉ 𝙽𝙰𝙼𝙴 : ❪[𐇮 𝑴𝑶𝑫𝒀 𖠮🚸𖠮 آلـۘهہؚيـٰـ‌ُـُ໋۠بـ໋ۘ۠ه 𐇮](https://t.me/elhyba)❫
-◉ 𝚄𝚂𝙴𝚁 : ❪ @elhyba ❫
-◉ 𝙸𝙳      : ❪ `6581896306` ❫
-◉ 𝙱𝙸𝙾    : ❪ for me (@elhypa) my world (@Source_Ze - @up_uo) my bro (@e_l_z_o_u_z) ❫""",
+        caption=f"""◉ 𝙽𝙰𝙼𝙴 : ❪[• 𝐊𝐡𝐚𝐲𝐚𝐥 𓏺](https://t.me/F_A_6)❫
+◉ 𝚄𝚂𝙴𝚁 : ❪ @F_A_6 ❫
+◉ 𝙸𝙳      : ❪ `5901732027` ❫
+◉ 𝙱𝙸𝙾    : ❪ my world KHAYAL70.t.me ❫""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "᳒𐇮 𝑴𝑶𝑫𝒀 𖠮🚸𖠮 آلـۘهہؚيـٰـ‌ُـُ໋۠بـ໋ۘ۠ه 𐇮", url=f"https://t.me/elhyba"), 
+                        "• 𝐊𝐡𝐚𝐲𝐚𝐥 𓏺", url=f"https://t.me/F_A_6"), 
                  ],[
                    InlineKeyboardButton(
-                        "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 𝐙𝐄 🔱", url=f"https://t.me/Source_Ze"),
+                        "𝐒𝐨𝐮𝐫𝐜𝐞 𝐥𝐨𝐥 🧚‍♀", url=f"https://t.me/K55DD"),
                 ],
 
             ]
