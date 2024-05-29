@@ -25,7 +25,7 @@ from dotenv import load_dotenv
 )
 async def bkouqw(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/41a777f089288f7ad2571.jpg",
+        photo=f"https://graph.org/file/57036e277059ef8608dd3.jpg",
         caption=f"""**اهلا بك عزيزي {message.from_user.mention} في اصدار سورس لاريـن
 ★᚜ اسم سورس : لاريـن
 ★᚜ نوع : ميـوزك
