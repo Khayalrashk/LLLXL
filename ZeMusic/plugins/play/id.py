@@ -70,35 +70,6 @@ def get_file_id(msg: Message):
                 return obj
 
 
-
-
-
-
-
-@app.on_message(command(["ا"]) & filters.group)
-async def khalid(client: Client, message: Message):
-    usr = await client.get_users(message.from_user.id)
-    name = usr.first_name
-    async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
-                    #await message.reply_photo(photo.file_id,       caption=f"""ᴜsᴇʀ -› {message.from_user.mention}\n𝘂𝘀𝗲𝗿𝗻𝗮𝗺𝗲 -› @{message.from_user.username}\nɪᴅ -› {message.from_user.id}\nbio » {bio}""", 
-        reply_markup=InlineKeyboardMarkup(
-
-            [
-
-                [
-
-                    InlineKeyboardButton(
-
-                        name, url=f"https://t.me/{message.from_user.id}")
-
-                ],
-
-            ]
-
-        )
-
-    
-
 @app.on_message(filters.regex("ا", "ايدي") & filters.group)
 async def khalid(client: Client, message: Message):
 
