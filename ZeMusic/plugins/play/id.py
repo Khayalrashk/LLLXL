@@ -49,12 +49,12 @@ async def iddd(client, message):
     usr = await client.get_chat(message.from_user.id)
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"""🤡 ¦𝙽𝙰𝙼𝙴 :{message.from_user.mention}\n🎯 ¦𝚄𝚂𝙴𝚁 :@{message.from_user.username}\n🎃 ¦𝙸𝙳 :`{message.from_user.id}`\n💌 ¦𝙱𝙸𝙾 :{usr.bio}\n✨ ¦𝙲𝙷𝙰𝚃: {message.chat.title}\n♻️ ¦𝙸𝙳.𝙶𝚁𝙾𝚄𝙿 :`{message.chat.id}`""", 
+    await message.reply_photo(photo,       caption=f"""-› 𝙽𝙰𝙼𝙴 ¦ :{message.from_user.mention}\n-› 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 ¦ @{message.from_user.username}\n-› 𝙸𝙳 ¦ {message.from_user.id}\n-› 𝙱𝙸𝙾 ¦ {usr.bio}\n-› 𝚂𝙾𝚄𝚁𝙲𝙴 ¦ @{K55DD}""", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        name, url=f"https://t.me/{message.from_user.username}")
+                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)
                 ],
             ]
         ),
@@ -111,7 +111,7 @@ async def idjjdd(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        name, url=f"https://t.me/{message.from_user.username}")
+                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)
                 ],
             ]
         ),
