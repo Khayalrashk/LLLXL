@@ -42,7 +42,6 @@ async def iddopen(client, message):
 @app.on_message(
     command(["ايدي","id","ا"])
     & filters.group
-    & ~filters.edited
 )
 async def iddd(client, message):
     if message.chat.id in iddof:
@@ -67,7 +66,6 @@ iddof = []
 @app.on_message(
     command(["قفل جمالي","تعطيل جمالي"])
     & filters.group
-    & ~filters.edited
 )
 async def lllock(client, message):
    get = await app.get_chat_member(message.chat.id, message.from_user.id)
@@ -82,7 +80,6 @@ async def lllock(client, message):
 @app.on_message(
     command(["فتح جمالي","تفعيل جمالي"])
     & filters.group
-    & ~filters.edited
 )
 async def idljjopen(client, message):
    get = await app.get_chat_member(message.chat.id, message.from_user.id)
@@ -100,7 +97,6 @@ async def idljjopen(client, message):
 @app.on_message(
     command(["جمالي"])
     & filters.group
-    & ~filters.edited
 )
 async def idjjdd(client, message):
     if message.chat.id in iddof:
