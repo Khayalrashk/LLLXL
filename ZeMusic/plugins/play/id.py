@@ -49,7 +49,7 @@ async def iddd(client, message):
       return
     usr = await client.get_chat(message.from_user.id)
     name = usr.first_name
-    await message.reply_text(caption=f"""-› 𝙽𝙰𝙼𝙴 ¦ :{message.from_user.mention}\n-› 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 ¦ @{message.from_user.username}\n-› 𝙸𝙳 ¦ {message.from_user.id}\n-› 𝙱𝙸𝙾 ¦ {usr.bio}\n-› 𝚂𝙾𝚄𝚁𝙲𝙴 ¦ @K55DD""", 
+    await message.reply_text(text,       caption=f"""-› 𝙽𝙰𝙼𝙴 ¦ :{message.from_user.mention}\n-› 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 ¦ @{message.from_user.username}\n-› 𝙸𝙳 ¦ {message.from_user.id}\n-› 𝙱𝙸𝙾 ¦ {usr.bio}\n-› 𝚂𝙾𝚄𝚁𝙲𝙴 ¦ @K55DD""", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
